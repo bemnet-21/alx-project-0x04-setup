@@ -6,9 +6,9 @@ import { LayoutProps } from "@/interface";
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

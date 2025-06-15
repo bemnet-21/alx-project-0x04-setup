@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Button from "../common/Button";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 
 const Header: React.FC = () => {
 
-  const pathname = usePathname()
+  const router = useRouter()
+  const pathname = router.pathname
   const count = useSelector((state: RootState) => state.counter.value)
 
 

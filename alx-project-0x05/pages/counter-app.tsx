@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { useCount } from '@/context/CounterContext';
+import { useCount } from '@/context/CountContext';
 
 
 const CounterApp: React.FC = () => {
@@ -15,6 +15,8 @@ const CounterApp: React.FC = () => {
   //   setCount(count > 0 ? count - 1: 0);
   // };
   const { count, increment, decrement } = useCount()
+
+  
   return (
     <div className='min-h-screen bg-gradient-to-r from-yellow-400 to-pink-500 flex flex-col justify-center items-center text-white'>
         {/* Title */}
